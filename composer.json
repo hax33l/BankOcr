@@ -1,0 +1,19 @@
+{
+    "name": "hax33l/bank-ocr",
+    "description": "BankOCR - Kata",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hax33l",
+            "email": "80815886+hax33l@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BankOcr\\": "src/"
+        }
+    }
+}
