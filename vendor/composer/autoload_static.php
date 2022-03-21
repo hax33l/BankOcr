@@ -21,10 +21,6 @@ class ComposerStaticInit6b075ac50a5b8b18a3346914e7c291af
     );
 
     public static $classMap = array (
-        'BankOcr\\dane\\Cyfra' => __DIR__ . '/../..' . '/src/dane/Cyfra.php',
-        'BankOcr\\dane\\NumerRachunku' => __DIR__ . '/../..' . '/src/dane/NumerRachunku.php',
-        'BankOcr\\formatter\\rachunkiFormatter' => __DIR__ . '/../..' . '/src/formatter/rachunkiFormatter.php',
-        'BankOcr\\parser\\OcrParser' => __DIR__ . '/../..' . '/src/parser/OcrParser.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

@@ -5,16 +5,16 @@ namespace BankOcr\dane;
 class Cyfra
 {
     private $wzorceCyfr = [
-        0 => "_ | ||_|",
-        1 => "|  |",
-        2 => "_  _||_",
-        3 => "_  _| _|",
-        4 => "|_|  |",
-        5 => "_ |_  _|",
-        6 => "_ |_ |_|",
-        7 => "_   |  |",
-        8 => "_ |_||_|",
-        9 => "_ |_| _|"
+        0 => " _ | ||_|",
+        1 => "     |  |",
+        2 => " _  _||_ ",
+        3 => " _  _| _|",
+        4 => "   |_|  |",
+        5 => " _ |_  _|",
+        6 => " _ |_ |_|",
+        7 => " _   |  |",
+        8 => " _ |_||_|",
+        9 => " _ |_| _|"
     ];
 
     public $znakiCyfry;
@@ -39,7 +39,7 @@ class Cyfra
 
     private function wyszukajWzorzec($znakiCyfry)
     {
-        $dopasowanaCyfra = array_search(trim($znakiCyfry), $this->wzorceCyfr);
+        $dopasowanaCyfra = array_search($znakiCyfry, $this->wzorceCyfr);
         return (is_numeric($dopasowanaCyfra)) ? $dopasowanaCyfra : false;
     }
     public function zwrocAlternatywneCyfry()

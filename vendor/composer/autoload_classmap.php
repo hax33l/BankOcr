@@ -6,9 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'BankOcr\\dane\\Cyfra' => $baseDir . '/src/dane/Cyfra.php',
-    'BankOcr\\dane\\NumerRachunku' => $baseDir . '/src/dane/NumerRachunku.php',
-    'BankOcr\\formatter\\rachunkiFormatter' => $baseDir . '/src/formatter/rachunkiFormatter.php',
-    'BankOcr\\parser\\OcrParser' => $baseDir . '/src/parser/OcrParser.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

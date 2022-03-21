@@ -1,0 +1,31 @@
+Niepoprawna liczba znaków w linii 1
+Niepoprawna liczba znaków w linii 3
+Niepoprawna liczba znaków w linii 4
+Niepoprawna liczba znaków w linii 5, rachunek został naprawiony 111111111
+Niepoprawna liczba znaków w linii 12, rachunek został naprawiony 200000000
+Niedozwolony znak w linii 14
+Niedozwolony znak w linii 18
+Niepoprawna liczba znaków w linii 21
+Niepoprawna liczba znaków w linii 23, rachunek został naprawiony 555555555
+Niepoprawna liczba znaków w linii 1
+Niepoprawna liczba znaków w linii 5
+Niepoprawna liczba znaków w linii 9
+Niepoprawna liczba znaków w linii 13
+Niepoprawna liczba znaków w linii 17
+Niepoprawna liczba znaków w linii 21
+Niepoprawna liczba znaków w linii 25
+Niepoprawna liczba znaków w linii 29
+Niepoprawna liczba znaków w linii 33
+Niepoprawna liczba znaków w linii 37
+Niepoprawna liczba znaków w linii 41
+Niepoprawna liczba znaków w linii 45
+Niepoprawna liczba znaków w linii 49
+Niepoprawna liczba znaków w linii 1
+Niepoprawna liczba znaków w linii 3
+Niepoprawna liczba znaków w linii 4
+Niepoprawna liczba znaków w linii 5, rachunek został naprawiony 111111111
+Niepoprawna liczba znaków w linii 12, rachunek został naprawiony 200000000
+Niedozwolony znak w linii 14
+Niedozwolony znak w linii 18
+Niepoprawna liczba znaków w linii 21
+Niepoprawna liczba znaków w linii 23, rachunek został naprawiony 555555555

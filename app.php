@@ -1,32 +1,35 @@
 <?php
 
-use BankOcr\parser\OcrParser;
-use BankOcr\formatter\rachunkiFormatter;
+use BankOcr\ConsoleLogger;
+use BankOcr\FileLogger;
+use BankOcr\OcrParser;
+use BankOcr\RachunkiFormatter;
 
 require_once realpath("vendor/autoload.php");
 
 $sciezkaPlikuDoWczytania = $argv[1] ?? readline("Podaj ścieżkę pliku zawierającego dane do wczytania: ");
+$sciezkaPlikuDoZapisu = $argv[2] ?? NULL;
 
 while (!file_exists($sciezkaPlikuDoWczytania)) {
     echo "Podano niepoprawną ścieżkę\n";
     $sciezkaPlikuDoWczytania = readline("Podaj ścieżkę pliku zawierającego dane do wczytania: ");
 }
 
-$ocrParser = new OcrParser($sciezkaPlikuDoWczytania);
-$rachunkiFormatter = new rachunkiFormatter;
-
-$ocrParser->odczytajNumeryRachunkow();
-$rachunkiDoWyswietlenia = $ocrParser->getNumeryRachunkow();
-
-if ($argc == 3) {
-    $sciezkaPlikuDoZapisu = $argv[2];
-    $plikWynikowy = fopen($sciezkaPlikuDoZapisu, "w");
-    foreach ($rachunkiDoWyswietlenia as $numerRachunku) {
-        fwrite($plikWynikowy, $rachunkiFormatter->zwrocWiersz($numerRachunku) . PHP_EOL);
+try {
+    if ($sciezkaPlikuDoZapisu) {
+        $logger = new FileLogger($sciezkaPlikuDoZapisu);
+    } else {
+        $logger = new ConsoleLogger();
     }
-    fclose($plikWynikowy);
-} else {
+
+    $ocrParser = new OcrParser($sciezkaPlikuDoWczytania, new FileLogger('log.txt'));
+    $rachunkiFormatter = new RachunkiFormatter;
+
+    $rachunkiDoWyswietlenia = $ocrParser->getNumeryRachunkow();
+
     foreach ($rachunkiDoWyswietlenia as $numerRachunku) {
-        echo ($rachunkiFormatter->zwrocWiersz($numerRachunku) . PHP_EOL);
+        $logger->log($rachunkiFormatter->zwrocWiersz($numerRachunku));
     }
+} catch (Exception $e) {
+    echo $e->getMessage() . "\n";
 }

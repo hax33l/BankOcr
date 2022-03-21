@@ -1,10 +1,10 @@
 <?php
 
-namespace BankOcr\formatter;
+namespace BankOcr;
 
 use BankOcr\dane\NumerRachunku;
 
-class rachunkiFormatter
+class RachunkiFormatter
 {
     public function zwrocWiersz(NumerRachunku $numerRachunku)
     {

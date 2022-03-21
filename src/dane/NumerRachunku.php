@@ -100,6 +100,15 @@ class NumerRachunku
         return $sumaKontrolna % 11 == 0;
     }
 
+    public function czyRachunekZawieraNierozpoznaneZnaki()
+    {
+        if(substr_count($this->getNumerRachunku(), '?') == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public static function czyPoprawnaDlugoscNumeruRachunku(array $cyfry)
     {
         if (count($cyfry) != self::LICZBA_CYFR_NUMERU_RACHUNKU) {
