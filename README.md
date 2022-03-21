@@ -1,6 +1,6 @@
 # BankOcr
-BankOcr - Kata
-https://codingdojo.org/kata/BankOCR/
+BankOcr - Kata <br/>
+More details about this challenge: https://codingdojo.org/kata/BankOCR/
 ## Description
 Code for this task is written in polish, since it was a part of programming training I participated in.
 ## Setup
